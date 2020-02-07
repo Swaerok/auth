@@ -1,18 +1,15 @@
 const users = [
-	{
-		login: 'bla1',
-		password: 'bla2',
-		name: 'Dasha',
-		age: 28,
-	},
+
 ]
 
-
-export default function psevdoServer(log, pass) {
+export function registration(obj) {
+	users.push(obj)
+}
+export function psevdoServer(email, password) {
 	return new Promise(((resolve, reject) => {
-		let res = users.find((item) => {
-			return (item.login === log && item.password === pass)
-        })
+		const res = users.find((item) => {
+			return (item.email === email && item.password === password)
+		})
 		if (res) {
 			setTimeout(() => resolve(res), 3000)
 		} else {
