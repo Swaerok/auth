@@ -1,0 +1,14 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    input {
+        margin: 5px 0 10px 0;
+    }
+}
