@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
-import {history} from './history'
+import history from './history'
 import { psevdoServer, registration } from './server'
 import Enter from './enter'
 import Register from './register'

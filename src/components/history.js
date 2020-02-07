@@ -1,3 +1,4 @@
-import { createBrowserHistory } from "history";
+/* eslint-disable import/no-extraneous-dependencies */
+import { createHashHistory } from 'history'
 
-export const history = createBrowserHistory();
+export default createHashHistory()

@@ -5,7 +5,7 @@ import {
 	Switch,
 	Route,
 } from 'react-router-dom';
-import {history} from './history'
+import history from './history'
 import styles from './app.scss'
 import Auth from './auth'
 import Anime from './anime'
@@ -14,6 +14,7 @@ export const App = () => {
 	return (
 		<Router history={history}>
 			<div className={styles.app}>
+				
 				<Switch>
 					<Route exact path="/" component={Auth} />
 					<Route path="/anime" component={Anime} />
